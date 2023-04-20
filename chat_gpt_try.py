@@ -45,9 +45,10 @@ top_results = results[:5000]
 print(top_results)
 #TODO: put each list in diffrent file
 
-with open("blast_results.txt ") as f:
-    for title, score in top_results:
-        print(title)
-        f.write(title)
-    f.close()
+# with open("blast_results.txt ", 'w') as f:
+for title, score in top_results:
+    print(title)
+    print(type(title))
+    #     f.write(title)
+    # f.close()
 
