@@ -1,18 +1,20 @@
 import ssl  # monkey patch for BioPython 1.68 & 1.69
-
+import pandas as pd
 from consts import XML_FOLDER_NAME, HITS_FILES_NAME, SEQ_FILES_NAME, CSV_FILES_NAME
-
-ssl._create_default_https_context = ssl._create_unverified_context
-import os
-import argparse
-
-PATH = os.getcwd()
 from Bio import SeqIO
 from Bio import Entrez
 from Bio.Blast import NCBIWWW, NCBIXML
+import os
+import argparse
+
+
+
+PATH = os.getcwd()
+ssl._create_default_https_context = ssl._create_unverified_context
+
+
 Entrez.email = 'zivse@post.bgu.ac.il' # Enter your email address here
 Entrez.api_key = '016d35b4600f9c5d1d5ced586898c3ff3a09' # Enter your API key here
-import pandas as pd
 
 
 def handle_entrez(protein_id):
