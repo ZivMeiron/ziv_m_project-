@@ -19,8 +19,8 @@ Entrez.api_key = '016d35b4600f9c5d1d5ced586898c3ff3a09' # Enter your API key her
 # Set the BLAST parameters
 blast_program = "blastp" # assuming you are working with amino acid sequences
 blast_database = "nr" # replace with the actual name of your BLAST database
-query_sequence = "mqrlvawdpa clplpppppa fksmevanfy yeadclaaay ggkaapaapp aarpgprppa gelgsigdhe raidfspyle plgapqapap atatdtfeaa ppapapapas sgqhhdflsd " \
-                 "lfsddyggkn ckkpaeygyv slgrlgaakg alhpgcfapl hppppppppp aelkaepgfe padckrkeea gapgggagma agfpyalray lgyqavpsgs sgslstssss sppgtpspad akapptacya gaapapsqvk skakktvdkh sdeykirrer nniavrksrd kakmrnletq hkvleltaen erlqkkveql srelstlrnl fkqlpeplla ssghc"
+query_sequence = "mqrlvawdpaclplpppppafksmevanfyyeadclaaayggkaapaappaarpgprppagelgsigdheraidfspyleplgapqapapatatdtfeaappapapapassgqhhdflsd" \
+                 "lfsddyggknckkpaeygyvslgrlgaakgalhpgcfaplhpppppppppaelkaepgfepadckrkeeagapgggagmaagfpyalraylgyqavpsgssgslstsssssppgtpspadakapptacyagaapapsqvkskakktvdkhsdeykirrernniavrksrdkakmrnletqhkvleltaenerlqkkveqlsrelstlrnlfkqlpepllassghc"
 query_coverage = 80 # replace with the desired query coverage percentage
 
 START_QUERY_ONE = 24
